@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: white;
+    background: cyan;
+    width: 100%;
+}
+.quote-container {
+   padding: 3rem;
+}
+.quote{
+    height: 300px;
+    text-shadow: 2px 2px 2px 20px;
+}
+h4{
+  font-size: 2rem; 
+  text-align: center;
+  
+}
+
+.author{
+    font-size: 1.24rem;
+    font-weight: 100;
+    text-align: right;
+}
+.buttons {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 2rem;
+   margin: 2rem 0;
+   
+}
+
+.timerOFF, .timerON, .showNewBtn {
+    padding: 1rem;
+    border: none;
+    background-color: lightseagreen;
+    color: white;
+}
+div.container {
+    margin: 15% auto;
+    width: 80%;
+    padding: 1rem;
+}
+
