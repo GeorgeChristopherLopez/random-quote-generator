@@ -1,16 +1,16 @@
 document.body.innerHTML += `
 <div class="container">
-<div class="quote-container">
-<h4 class="quote">"Look at all those chickens..."</h4>
 
-<p class="category">#philosophy</category>
-<p class="author">Abraham Lincoln</p>
-</div>
+<h4 class="quote">"Look at all those chickens..."</h4>
+<p style="display: grid; grid-template-columns: 1fr 1fr">
+<span class="category">#philosophy</span>
+<span class="author">Abraham Lincoln</span>
+</p>   
 <div class="buttons">
-<button class="timerON">Start Interval</button>
-<button class="showNewBtn">Show another quote</button>
-<button class="timerOFF">Stop interval</button>
-</div>
+        <button class="timerON">Start Interval</button>
+        <button class="showNewBtn">Show another quote</button>
+        <button class="timerOFF">Stop interval</button>
+    </div>
 </div>
 `;
 
