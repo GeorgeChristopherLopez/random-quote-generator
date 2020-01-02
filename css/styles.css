@@ -42,10 +42,12 @@ body {
 
 button {
     max-width: 10rem;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.1711711rem;
+    font-weight: 800;
     border-radius: 37px 0;
     cursor: pointer;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.37);
+    box-shadow: 2px 2px 2px rgba(0,0,0,.37);
 }
 
 button:focus {
