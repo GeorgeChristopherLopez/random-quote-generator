@@ -25,7 +25,7 @@ let colorTimer;
 
 let timer = false;
 
-let colors = ["pink", "blue","red","green","purple","yellow", "orange","indigo"];
+let colors = ["pink", "blue", "red", "green", "purple","lightgoldenrodyellow", "orange","indigo","#333"];
 let quotes = [
     {
         quote: "Programming isn't about what you know; it's about what you can figure out",
