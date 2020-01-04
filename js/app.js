@@ -1,16 +1,16 @@
 document.body.innerHTML += `
 <div class="container">
 
-<h4 class="quote">"Look at all those chickens..."</h4>
-<p style="display: grid; grid-template-columns: 1fr 1fr">
-<span class="category">#philosophy</span>
-<span class="author">Abraham Lincoln</span>
-</p>   
+    <h4 class="quote">"Look at all those chickens..."</h4>
+    <p style="display: grid; grid-template-columns: 1fr 1fr">
+    <span class="category">#philosophy</span>
+    <span class="author">Abraham Lincoln</span>
+    </p>   
 <div class="buttons">
         <button class="timerON">Start Interval</button>
-        <button class="showNewBtn">Show another quote</button>
+        <button class="showNewBtn">New Quote</button>
         <button class="timerOFF">Stop interval</button>
-    </div>
+</div>
 </div>
 `;
 
@@ -25,7 +25,7 @@ let colorTimer;
 
 let timer = false;
 
-let colors = ["pink", "blue", "red", "green", "purple","lightgoldenrodyellow", "orange","indigo","#333"];
+let colors = ["pink", "blue", "red", "green", "purple","yellow","orange","indigo","#333"];
 let quotes = [
     {
         quote: "Programming isn't about what you know; it's about what you can figure out",
@@ -156,3 +156,34 @@ timerOFF.addEventListener('click', e => {
     timer = false;
 })
 
+showNewBtn.addEventListener('mouseover', e => {
+    showNewBtn.style.backgroundColor = "lightseagreen";
+});
+
+showNewBtn.addEventListener('mouseout', e => {
+    showNewBtn.style.backgroundColor = "transparent";
+});
+
+
+timerON.addEventListener('mouseover', e => {
+    timerON.style.backgroundColor = "transparent";
+    timerON.style.border = "2px solid white";
+
+});
+
+timerON.addEventListener('mouseout', e => {
+    timerON.style.backgroundColor = "lightseagreen";
+    timerON.style.border = "NONE";
+});
+
+timerOFF.addEventListener('mouseover', e => {
+    timerOFF.style.backgroundColor = "transparent";
+    timerOFF.style.border = "2px solid white";
+
+});
+
+timerOFF.addEventListener('mouseout', e => {
+    timerOFF.style.backgroundColor = "lightseagreen";
+    timerOFF.style.border = "NONE";
+
+});

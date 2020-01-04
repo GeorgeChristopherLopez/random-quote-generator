@@ -31,23 +31,21 @@ body {
     text-align: right;
 }
 .buttons {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-gap: 2rem;
-   margin: 2rem 0rem;
-  
- 
-   
+
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 0rem auto;
 }
 
 button {
-    max-width: 10rem;
+    width: 12rem;
     font-size: 1.1711711rem;
     font-weight: 800;
     border-radius: 37px 0;
     cursor: pointer;
     text-shadow: 2px 2px 2px rgba(0,0,0,.37);
     box-shadow: 2px 2px 2px rgba(0,0,0,.37);
+    margin: 1rem auto;
 }
 
 button:focus {
@@ -56,17 +54,18 @@ button:focus {
 }
 
 .timerOFF, .timerON, .showNewBtn {
-    padding: .51rem;
+    padding: .5rem ;
+  
     border: none;
     background-color: lightseagreen;
     
     color: white;
 }
-
-.showNewBtn {
-    border: 2px solid white;
-    background-color: transparent;
-}
+ 
+    .showNewBtn {
+        border: 2px solid white;
+        background-color: transparent;
+    }
 div.container {
     margin: 25% auto;
     width: 80%;
@@ -89,7 +88,12 @@ div.container {
     div.container {
         margin:15% auto;
       
-    }   
+    }
+
+    .buttons{
+        grid-template-columns: repeat(3, 1fr);
+    }
+   
 }
 
 @media screen and (min-width:1024px ){
@@ -105,4 +109,6 @@ div.container {
     .container{
         padding: 3rem;
     }
+
+
 }
